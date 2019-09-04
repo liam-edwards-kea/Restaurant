@@ -190,6 +190,7 @@ article {
 
 .discountTag {
     position: absolute;
+    left: 10px;
 }
 
 /* modal */
