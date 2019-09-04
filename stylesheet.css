@@ -171,6 +171,7 @@ article {
 
 .Thediscount {
     color: red;
+    font-weight: 700;
 }
 
 .hide {
@@ -190,10 +191,11 @@ article {
 
 .discountTag {
     position: absolute;
-    left: 10px;
+    left: 0;
 }
 
 /* modal */
+
 .modal-background {
     position: fixed;
     z-index: 10;
