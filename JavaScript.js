@@ -40,7 +40,6 @@ function showDish(dish) {
     }
 
     if (dish.soldout) {} else {
-        copy.querySelector(".soldOut").style.opacity = "0.5"
         copy.querySelector(".soldOut").remove()
     }
 

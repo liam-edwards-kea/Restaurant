@@ -22,6 +22,11 @@ body {
     grid-column: 1/-1
 }
 
+section > h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
 h1 {
     overflow: hidden;
     text-align: center;
@@ -174,12 +179,18 @@ article {
 
 .restaurant {
     position: absolute;
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
 }
 
-.soldOut {z-index: 10;
-position: absolute;}
+.soldOut {
+    z-index: 10;
+    position: absolute;
+}
+
+.discountTag {
+    position: absolute;
+}
 
 /* modal */
 .modal-background {
