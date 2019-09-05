@@ -1,4 +1,5 @@
-/*MODAL*/const modal = document.querySelector(".modal-background");
+/*MODAL*/
+const modal = document.querySelector(".modal-background");
 modal.addEventListener("click", () => {
     modal.classList.add("hide");
 });
@@ -51,18 +52,18 @@ function showDish(dish) {
     if (dish.discount) {} else {
         copy.querySelector(".discountTag").remove()
     }
-     copy.querySelector(".shortDescription").textContent = dish.shortdescription;
+    copy.querySelector(".shortDescription").textContent = dish.shortdescription;
 
     copy.querySelector(
         ".shadow").src = `imgs/medium/${dish.image}-md.jpg`;
-/*MODAL*/
-    copy.querySelector(".button").addEventListener("click", () => {
+    /*MODAL*/
+    copy.querySelector("button").addEventListener("click", () => {
 
         fetch(`https://kea-alt-del.dk/t5/api/product?id=${dish.id}`)
             .then(res => res.json())
             .then(showDetails);
     });
-/*MODAL*/
+    /*MODAL*/
 
     document.querySelector("#" + dish.category).appendChild(copy);
 
@@ -74,6 +75,9 @@ function showDetails(data) {
     modal.classList.remove("hide");
     if (dish.vegetarian) {} else {
         copy.querySelector(".vegetarian").remove()
+    }
+    if (dish.alcohol) {} else {
+        copy.querySelector(".alcohol").remove()
     }
 }
 /*MODAL*/
