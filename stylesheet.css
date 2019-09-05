@@ -208,6 +208,7 @@ article {
 
 .modal-content {
     background-color: #fefefe;
+    border-radius: 12px;
     border: 1px solid #7c1f17;
     margin: 1em;
     padding: 2em;
