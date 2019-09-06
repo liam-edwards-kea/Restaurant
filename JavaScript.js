@@ -73,7 +73,7 @@ function showDish(dish) {
 /*MODAL*/
 function showDetails(data) {
     modal.querySelector(".modal-name").textContent = data.name;
-    modal.querySelector(".modal-description").textContent = data.longdescription;
+    modal.querySelector(".modal-description").textContent = data.shortdescription;
     modal.classList.remove("hide");
         if (data.vegetarian) {} else {
             modal.querySelector(".vegetarian").classList.add("hide")
